@@ -4,12 +4,25 @@ author: "Винни-Пух :)"
 date: "10/9/2017"
 output:
   pdf_document:
+    toc: true
+    toc_depth: 2
     keep_tex: yes
+    number_sections: true
+    fig_width: 5
+    fig_height: 4
+    fig_caption: true
+    highlight: tango
     latex_engine: xelatex
   word_document: default
   html_document: default
-mainfont: Arial
 lang: ru-RU
+mainfont: Arial
+fontsize: 11pt
+geometry: margin=1in
+documentclass: article
+linkcolor: blue
+urlcolor: blue
+citecolor: blue
 header-includes:
 - \newfontfamily{\cyrillicfonttt}{Arial}
 - \newfontfamily{\cyrillicfont}{Arial}

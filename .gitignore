@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+inst/rmarkdown/templates/rusart_pdflatex/skeleton/skeleton.pdf
+inst/rmarkdown/templates/rusart_pdflatex/skeleton/skeleton.tex
+inst/rmarkdown/templates/rusart_zelatex/skeleton/skeleton.pdf
+inst/rmarkdown/templates/rusart_zelatex/skeleton/skeleton.tex
