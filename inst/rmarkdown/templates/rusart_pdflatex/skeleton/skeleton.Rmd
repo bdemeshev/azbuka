@@ -25,6 +25,10 @@ urlcolor: blue
 citecolor: blue
 ---
 
+```{r, include=FALSE}
+library(tidyverse) # манипуляции с данными и графики
+```
+
 # О мёде
 
 Простой текст, *курсив*, **жирный**, ~~зачёркнутый~~ :)

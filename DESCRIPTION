@@ -3,7 +3,12 @@ Title: Cyrillic templates for Rmd documents
 Version: 0.1.0
 Authors@R: person("Boris", "Demeshev", email = "boris.demeshev@gmail.com", role = c("aut", "cre"))
 Description: The package add cyrillic templates. Just started.
+Imports:
+  tikzDevice (>= 0.10-1),
+  knitr (>= 1.17),
+  tidyverse (>= 1.1.0)
 Depends: R (>= 3.4.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1

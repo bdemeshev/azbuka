@@ -8,8 +8,8 @@ output:
     toc_depth: 2
     keep_tex: yes
     number_sections: true
-    fig_width: 5
-    fig_height: 4
+    fig_width: 4
+    fig_height: 3
     fig_caption: true
     highlight: tango
     latex_engine: xelatex
@@ -28,6 +28,14 @@ header-includes:
 - \newfontfamily{\cyrillicfont}{Arial}
 - \newfontfamily{\cyrillicfontsf}{Arial}
 ---
+
+```{r, include=FALSE}
+library(tikzDevice) # конвертация графиков в tikz-код
+library(azbuka) # настройка конвертации графиков в tikz-код
+library(tidyverse) # манипуляции с данными и графики
+```
+
+
 
 # О мёде
 
@@ -66,3 +74,11 @@ header-includes:
 
 Книжка по [knitr](https://yihui.name/knitr/options/)
 
+```{r, dev="png", dpi=200}
+qplot(x = rnorm(100))  + xlab("Привет!")
+```
+
+
+```{r, dev="tikz"}
+qplot(x = rnorm(100)) + xlab("Hi")
+```
