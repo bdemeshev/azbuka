@@ -34,7 +34,7 @@ editor_options:
 ```{r, include=FALSE}
 library(tikzDevice) # конвертация графиков в tikz-код
 # library(azbuka) # настройка конвертации графиков в tikz-код
-# azbuka::tikzsetup()
+azbuka::tikzsetup()
 library(tidyverse) # манипуляции с данными и графики
 ```
 
