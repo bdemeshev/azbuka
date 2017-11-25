@@ -12,14 +12,19 @@ output:
     keep_tex: yes
     theme: Warsaw
     toc: no
-    latex_engine: pdflatex
+    latex_engine: xelatex
 lang: ru-RU
+mainfont: Arial
 fontsize: 11pt
 linkcolor: blue
 urlcolor: blue
 citecolor: blue
 editor_options: 
   chunk_output_type: console
+header-includes:
+- \newfontfamily{\cyrillicfonttt}{Arial}
+- \newfontfamily{\cyrillicfont}{Arial}
+- \newfontfamily{\cyrillicfontsf}{Arial}
 ---
 
 
