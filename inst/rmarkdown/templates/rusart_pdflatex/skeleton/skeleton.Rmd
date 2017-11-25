@@ -68,5 +68,12 @@ library(tidyverse) # манипуляции с данными и графики
 
 Книжка по [knitr](https://yihui.name/knitr/options/)
 
+```{r, dev="png", dpi=200, message=FALSE, fig.height=6}
+qplot(x = rnorm(100))  + xlab("Привет!")
+```
+
+```{r, dev="tikz", message=FALSE, fig.height=6}
+qplot(x = rnorm(100)) + xlab("$x^2+y^2=z^2$")
+```
 
 
