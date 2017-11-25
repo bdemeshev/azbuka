@@ -4,7 +4,7 @@ author: "Винни-Пух :)"
 date: "10/9/2017"
 output:
   pdf_document:
-    toc: true
+    toc: false
     toc_depth: 2
     keep_tex: yes
     number_sections: true
@@ -18,7 +18,7 @@ output:
 lang: ru-RU
 mainfont: Arial
 fontsize: 11pt
-geometry: margin=1in
+geometry: left=2cm, right=2cm, top=2cm, bottom=2cm
 documentclass: article
 linkcolor: blue
 urlcolor: blue
@@ -27,6 +27,8 @@ header-includes:
 - \newfontfamily{\cyrillicfonttt}{Arial}
 - \newfontfamily{\cyrillicfont}{Arial}
 - \newfontfamily{\cyrillicfontsf}{Arial}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include=FALSE}

@@ -1,46 +1,45 @@
 ---
-title: "Пыхтелка"
-author: "Винни-Пух"
-date: "10/9/2017"
-output:
-  pdf_document: 
-    toc: false
-    toc_depth: 2
-    keep_tex: yes
-    number_sections: true
-    fig_width: 5
-    fig_height: 4
-    fig_caption: true
+title: "Дао Пятачка"
+author: "Пятачок"
+date: "25 ноября 2017"
+output: 
+  beamer_presentation: 
+    colortheme: seahorse
+    fig_caption: yes
+    fonttheme: structurebold
     highlight: tango
+    incremental: no
+    keep_tex: yes
+    theme: Warsaw
+    toc: no
     latex_engine: pdflatex
-  word_document: default
-  html_document: default
 lang: ru-RU
-mainfont: Arial
-fontsize: 11pt
-geometry: left=2cm, right=2cm, top=2cm, bottom=2cm
-documentclass: article
-linkcolor: blue
-urlcolor: blue
-citecolor: blue
 editor_options: 
   chunk_output_type: console
 ---
+
 
 ```{r, include=FALSE}
 library(tidyverse) # манипуляции с данными и графики
 ```
 
-# О мёде
+
+## Слайд со списком
+
+Пойти в гости:
+
+* к Винни-Пуху
+
+* к Кролику
+
+* к Иа-Иа
+
+## Пробуем шрифты
 
 Простой текст, *курсив*, **жирный**, ~~зачёркнутый~~ :)
 
-Мёд бывает:
 
-* Правильный;
-* Неправильный;
-
-# О пчёлах
+## О пчёлах
 
 Пчёлы бывают:
 
@@ -50,7 +49,7 @@ library(tidyverse) # манипуляции с данными и графики
 
 По последним сводкам с фронта логарифм двух равен `r log(2)`.
 
-# Табличка
+## Табличка
 
 | 4   | 4   | 5  | 5  | 4   |
 |-----|-----|----|----|-----|
@@ -58,7 +57,7 @@ library(tidyverse) # манипуляции с данными и графики
 | 45  | 54  |    |    |  54 |
 |  54 | 54  |    |    |  54 |
 
-# Полезности
+## Полезности
 
 [Генератор таблиц](http://tablesgenerator.com)
 
@@ -68,5 +67,13 @@ library(tidyverse) # манипуляции с данными и графики
 
 Книжка по [knitr](https://yihui.name/knitr/options/)
 
+## График с русским текстом через png
 
+```{r, dev="png", dpi=200, message=FALSE}
+qplot(x = rnorm(100))  + xlab("Привет!")
+```
 
+## График с формулой через tikz
+```{r, dev="tikz", message=FALSE}
+qplot(x = rnorm(100)) + xlab("$x^2+y^2=z^2$")
+```
