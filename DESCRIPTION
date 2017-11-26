@@ -1,5 +1,5 @@
 Package: azbuka
-Title: Cyrillic templates for Rmd documents
+Title: Cyrillic Templates for Rmd Documents
 Version: 0.1.0
 Authors@R: person("Boris", "Demeshev", email = "boris.demeshev@gmail.com", role = c("aut", "cre"))
 Description: The package add cyrillic Rmd templates to the Rstudio interface.
