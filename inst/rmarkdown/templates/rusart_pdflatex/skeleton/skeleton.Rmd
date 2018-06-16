@@ -3,7 +3,7 @@ title: "Пыхтелка"
 author: "Винни-Пух"
 date: "10/9/2017"
 output:
-  pdf_document: 
+  pdf_document:
     toc: false
     toc_depth: 2
     keep_tex: yes
@@ -23,7 +23,7 @@ documentclass: article
 linkcolor: blue
 urlcolor: blue
 citecolor: blue
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 
@@ -72,8 +72,11 @@ library(tidyverse) # манипуляции с данными и графики
 qplot(x = rnorm(100))  + xlab("Привет!")
 ```
 
-```{r, dev="tikz", message=FALSE, fig.height=6}
+
+Экспериментальная поддержка tikz:
+```{r, dev="tikz", message=FALSE, fig.height=6, eval=FALSE}
+library(tikzDevice) # конвертация графиков в tikz-код
+# library(azbuka) # настройка конвертации графиков в tikz-код
+azbuka::tikzsetup()
 qplot(x = rnorm(100)) + xlab("$x^2+y^2=z^2$")
 ```
-
-

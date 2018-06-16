@@ -2,8 +2,8 @@
 title: "Дао Пятачка"
 author: "Пятачок"
 date: "25 ноября 2017"
-output: 
-  beamer_presentation: 
+output:
+  beamer_presentation:
     colortheme: seahorse
     fig_caption: yes
     fonttheme: structurebold
@@ -18,7 +18,7 @@ fontsize: 11pt
 linkcolor: blue
 urlcolor: blue
 citecolor: blue
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 
@@ -78,6 +78,10 @@ qplot(x = rnorm(100))  + xlab("Привет!")
 ```
 
 ## График с формулой через tikz
-```{r, dev="tikz", message=FALSE, fig.height=6}
+
+```{r, dev="tikz", message=FALSE, fig.height=6, eval=FALSE}
+library(tikzDevice) # конвертация графиков в tikz-код
+# library(azbuka) # настройка конвертации графиков в tikz-код
+azbuka::tikzsetup()
 qplot(x = rnorm(100)) + xlab("$x^2+y^2=z^2$")
 ```
