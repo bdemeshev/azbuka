@@ -74,11 +74,16 @@ library(tidyverse) # манипуляции с данными и графики
 
 Книжка по [knitr](https://yihui.name/knitr/options/)
 
-```{r, dev="png", dpi=200, message=FALSE, fig.height=3}
+## График с русским текстом через png
+
+```{r, dev="png", dpi=200, message=FALSE, fig.height=6}
 qplot(x = rnorm(100))  + xlab("Привет!")
 ```
 
-Экспериментальная поддержка tikz:
+## График с формулой через tikz
+
+Не всегда работает :(
+
 ```{r, dev="tikz", message=FALSE, fig.height=6, eval=FALSE}
 library(tikzDevice) # конвертация графиков в tikz-код
 # library(azbuka) # настройка конвертации графиков в tikz-код

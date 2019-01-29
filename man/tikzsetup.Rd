@@ -4,8 +4,8 @@
 \alias{tikzsetup}
 \title{Setup tikz device for russian Rmd/Rnw files}
 \usage{
-tikzsetup(compiler = "xetex", lang = "russian", cyrillic_font = "Arial",
-  font_size = 12)
+tikzsetup(compiler = "xetex", lang = "russian",
+  cyrillic_font = "Arial", font_size = 12)
 }
 \arguments{
 \item{compiler}{currently xelatex is supported}
