@@ -1,0 +1,18 @@
+---
+title: "Что-то по-русски"
+output: 
+  word_document:
+    keep_md: yes
+    toc: no
+  powerpoint_presentation:
+    reference_doc: "scorm_hse_template_alpha.pptx"
+    slide_level: 2
+    keep_md: yes
+font: "Myriad Pro"
+lang: ru-RU
+editor_options: 
+  chunk_output_type: console
+---
+
+Шаблончик для powerpoint. Возможно, ещё требуется поставить dev-версию Rstudio.
+
