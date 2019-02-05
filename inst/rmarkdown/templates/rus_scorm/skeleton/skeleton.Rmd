@@ -14,5 +14,90 @@ editor_options:
   chunk_output_type: console
 ---
 
-Шаблончик для powerpoint. Возможно, ещё требуется поставить dev-версию Rstudio.
+## Если на логотипах вшэ
+
+появляется крестик с надписью "невозможно отобразить картинку", 
+то благородный дон может кликнуть на правую кнопку мыши на картинке,
+и выбрать "вырезать" :)
+
+::: notes
+Какую-то ересь можно написать :)
+:::
+
+## Для счастья перевода Rmd в pptx
+
+Осенью 2018 года требуется dev-версия Rstudio
+
+[www.rstudio.com/products/rstudio/download/preview/](https://www.rstudio.com/products/rstudio/download/preview/)
+
+## Установка шрифтов на винде
+
+1. Выделяем ttf-файлы со шрифтами мышкой
+2. Кликаем "Установить шрифт"
+3. Профит!
+
+## ЗАГОЛОВОК СЛАЙДА 32 pt Bold
+
+### Подзаголовок на слайде
+
+Да будет свет, _сказал монтёр_ и **на полу** разжёг костёр!
+
+### Подзаголовок на слайде
+
+$$
+x^2 + y^2 = z^2
+$$
+
+Основной текст 24 пт
+Red: 0, Green: 90, Blue: 171
+
+# ПЕРЕХОДИМ К ПОПУГАЯМ. Новый Раздел
+
+## Стало быть списки!
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Слайд с двумя колонками
+
+:::::::::::::: {.columns}
+::: {.column}
+На поле танки грохотали
+солдаты шли в последний бой
+А молодого командира несли 
+с пробитой головой
+
+ня!
+:::
+::: {.column}
+![](https://upload.wikimedia.org/wikipedia/ru/7/77/Pikachu.png)
+:::
+::::::::::::::
+
+## Таблица для полного кайфа
+
+```{r, include=FALSE}
+library(tidyverse)
+library(knitr)
+mtcars_head = head(mtcars, 4) %>% select(-qsec, -drat, -wt)
+```
+
+```{r, results='markup', echo=FALSE}
+kable(mtcars_head, format = "markdown")
+```
+
+
+## Слайд с кодом
+
+```{cpp junk, eval=FALSE}
+equation first_model y c x ar(1)
+```
+
+## Слайд с графиком
+
+```{r diamonds, echo=FALSE}
+qplot(data = diamonds, x = carat, y = price, col = cut) +
+  labs(x = "Привет", y = "Пока", title = "Чудо график")
+```
 
